@@ -3,8 +3,8 @@ import {Container, Col} from "react-bootstrap";
 function Achievment(){
     return(
         <>
-        <Container fluid className="flexHeight">
-            <section id="experiences" className="experiences">
+        <Container id="experiences" fluid className="flexHeight">
+            <section  className="experiences">
                 <h1 className="sectionTitle">
                     Qu'ai-je déjà réalisé ?
                 </h1>

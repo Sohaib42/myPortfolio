@@ -3,8 +3,8 @@ import {Container, Col} from "react-bootstrap";
 function Capabilities(){
     return(
         <>
-        <Container fluid className="flexHeight">
-            <section id="abilities" className="abilities">
+        <Container id="abilities" fluid className="flexHeight">
+            <section className="abilities">
             <h1 className="sectionTitle">
                 Ce que je pratique !
             </h1>

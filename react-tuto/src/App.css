@@ -104,6 +104,28 @@
   align-items: center;
   width: fit-content;
   padding:0.2em;
+  margin: 0.3em 0 1em 0;
   border-radius: 3%;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;}
 
+.backtoTop{
+  position: fixed;
+  bottom: 1vh;
+  right: 1vh;
+  color: rgb(97, 218, 251);
+  background-color: white;
+  width: min-content²;
+}
+
+.profileTabs{
+  margin-top: 3vh;
+  inline-size: fit-content;
+}
+.styList{
+  list-style: none;
+}
+
+.separator{
+  border-radius: 50%;
+  border: cornflowerblue 2px solid;
+}

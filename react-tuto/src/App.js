@@ -1,4 +1,5 @@
 import {Container , Row , Col} from 'react-bootstrap';
+import {ArrowUpCircle} from "react-bootstrap-icons";
 import HeadNav from './components/HeadNav';
 import Profile from './components/Profile';
 import Skills from './components/Skills';
@@ -14,6 +15,7 @@ function App() {
         <Skills/>
         <Achievment/>
         <Capabilities/>
+        <span className="backtoTop"><ArrowUpCircle/></span>
     </div>
   );
 }
