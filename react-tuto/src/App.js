@@ -1,11 +1,12 @@
-import {Container , Row , Col} from 'react-bootstrap';
-import {ArrowUpCircle} from "react-bootstrap-icons";
+import {Container , Row , Col, NavLink} from 'react-bootstrap';
+import ScrollButton from './components/ScrollButon';
 import HeadNav from './components/HeadNav';
 import Profile from './components/Profile';
 import Skills from './components/Skills';
 import Achievment from './components/Achievment';
 import Capabilities from './components/Capabilities';
 import './App.css';
+
 
 function App() {
   return (
@@ -15,9 +16,9 @@ function App() {
         <Skills/>
         <Achievment/>
         <Capabilities/>
-        <span className="backtoTop"><ArrowUpCircle/></span>
+        <ScrollButton/>
     </div>
   );
 }
 
-export default App;
+export default App; 

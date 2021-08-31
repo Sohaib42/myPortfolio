@@ -113,8 +113,23 @@
   bottom: 1vh;
   right: 1vh;
   color: rgb(97, 218, 251);
-  background-color: white;
-  width: min-content²;
+  width: 5vw;
+  height: 5vh;
+  max-inline-size: fit-content;
+}
+.backtoTop{
+  position: fixed;
+  bottom: 1vh;
+  right: 1vh;
+  color: rgb(97, 218, 251);
+  width: 5vw;
+  height: 5vh;
+  max-inline-size: fit-content;
+}
+.backtoTop:hover{
+  transform: scale(1.05);
+  color: rgb(34, 203, 250);
+
 }
 
 .profileTabs{
