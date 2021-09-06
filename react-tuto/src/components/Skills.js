@@ -1,4 +1,5 @@
 import {Container, Col, Image} from "react-bootstrap";
+import {ReactComponent as TeraCampus} from "./tera-campus.svg";
 function Skills(){
     return(
         <>
@@ -15,6 +16,7 @@ function Skills(){
                             <h5>
                                 Tera Campus - Télé-présentiel
                             </h5>
+                            <TeraCampus/>
                             <p>
                                 Bac + 3 ( Titre RNCP niveau 6) - Administrateur des systèmes d'informations<br/>
                                 <i>
@@ -27,7 +29,7 @@ function Skills(){
                             <h5>
                                 Human Booster - Saint-Etienne (42)
                             </h5>
-                            <Image src='/humanbooster.jpg' height="100"/>
+                            <Image src='/humanbooster.jpg' height="50"/>
                             <p>
                                 Bac + 2 (Titre RNCP niveau 5) - Développeur Web/ Web mobile<br/>                     
                                 <i>

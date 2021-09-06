@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import {ArrowUpCircle} from "react-bootstrap-icons";
-import { Button } from 'react-bootstrap';
   
 function ScrollButton(){
   
@@ -28,7 +27,7 @@ function ScrollButton(){
   window.addEventListener('scroll', toggleVisible);
   
   return (
-      <span>
+      <span className="spanBack">
      <ArrowUpCircle className="backtoTop" onClick={scrollToTop} 
      style={{display: visible ? 'inline' : 'none'}} />
      </span>

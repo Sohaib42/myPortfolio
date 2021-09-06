@@ -46,6 +46,7 @@
   height: fit-content !important;
   padding-top: 1em;
   padding-bottom: 1em;
+  min-height: 80vh !important;
 }
 
 .chooseList>a{
@@ -108,24 +109,46 @@
   border-radius: 3%;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;}
 
-.backtoTop{
+.spanBack{
   position: fixed;
-  bottom: 1vh;
-  right: 1vh;
-  color: rgb(97, 218, 251);
-  width: 5vw;
-  height: 5vh;
-  max-inline-size: fit-content;
+  width: 5%;
+  font-size: 30px;
+  background: transparent !important;
+    bottom: 2vh;
+    color: rgb(97, 218, 251);
+    width: 5vw;
+    height: 5vh;
+    max-inline-size: -moz-fit-content;
+    max-inline-size: fit-content;
 }
 .backtoTop{
-  position: fixed;
-  bottom: 1vh;
-  right: 1vh;
-  color: rgb(97, 218, 251);
-  width: 5vw;
-  height: 5vh;
-  max-inline-size: fit-content;
+  animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) alternate forwards;
+
 }
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+            transform: scale(1.1);
+  }
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+            scale: (1.1);
+  }
+}
+
 .backtoTop:hover{
   transform: scale(1.05);
   color: rgb(34, 203, 250);

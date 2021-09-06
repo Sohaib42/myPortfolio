@@ -1,10 +1,5 @@
 import logo from '../logo.svg';
-import {Container, NavLink, Row, Col} from 'react-bootstrap';
-
-const rowDirection = {
-    flexDirection: 'row',
-};
-
+import { NavLink, Row, Col} from 'react-bootstrap';
 function HeadNav(){
     return(
         <>
@@ -44,6 +39,6 @@ function HeadNav(){
         </ul>
       </header>
         </>
-    )
+    );
 }
 export default HeadNav;

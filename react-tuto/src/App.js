@@ -1,10 +1,10 @@
-import {Container , Row , Col, NavLink} from 'react-bootstrap';
 import ScrollButton from './components/ScrollButon';
 import HeadNav from './components/HeadNav';
 import Profile from './components/Profile';
 import Skills from './components/Skills';
 import Achievment from './components/Achievment';
 import Capabilities from './components/Capabilities';
+import HighOrderTest from './components/HighOrder';
 import './App.css';
 
 
@@ -17,6 +17,7 @@ function App() {
         <Achievment/>
         <Capabilities/>
         <ScrollButton/>
+        <HighOrderTest/>
     </div>
   );
 }
