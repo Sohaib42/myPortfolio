@@ -1,3 +1,4 @@
+import React from 'react';
 import ScrollButton from './components/ScrollButon';
 import HeadNav from './components/HeadNav';
 import Profile from './components/Profile';
@@ -9,9 +10,17 @@ import './App.css';
 
 
 function App() {
+  const [data, setData] = React.useState(null);
+
+  React.useEffect(() => {
+    fetch("/")
+      .then((res) => res.json())
+      .then((data) => setData(data.message));
+  }, []);
   return (
     <div className="App">
         <HeadNav/>
+        <p>{!data ? "Loading..." : data}</p>
         <Profile/>
         <Skills/>
         <Achievment/>
