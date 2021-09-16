@@ -1,15 +1,8 @@
-module.exports = mongoose => {
-    const Tutorial = mongoose.model(
-      "tutorial",
-      mongoose.Schema(
-        {
-          title: String,
-          description: String,
-          published: Boolean
-        },
-        { timestamps: true }
-      )
-    );
-  
-    return Tutorial;
-  };
+const mongoose = require("mongoose")
+
+const schema = mongoose.Schema({
+	title: String,
+	content: String
+})
+
+module.exports = mongoose.model("Post", schema)
