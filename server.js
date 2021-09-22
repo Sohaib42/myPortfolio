@@ -1,11 +1,10 @@
 const express = require("express");
 const cors = require("cors");
+const bodyParser= require("body-parser");
 const routes = require("./routes");
 
 
-var corsOptions = {
-  origin: "http://localhost:8081"
-};
+
 
 const PORT = process.env.PORT || 8080;
 
@@ -19,6 +18,7 @@ db.mongoose
     console.log("Connected to the database!");
 
     const app = express();
+    app.use(cors({ origin: 'http://localhost:3000' , credentials :  true}));
 
     app.use(express.json());
     app.use(express.urlencoded({

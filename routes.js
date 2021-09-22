@@ -3,15 +3,16 @@ const Post = require("./react-tuto/models/tutorial.model")
 const router = express.Router()
 
 router.get("/posts",async(req,res)=>{
-    try{
+    try
+    {
     const posts = await Post.find()
-    res.status(200).json({
-        status:'success',
-        data:{
-            data: posts
-        }
-    })
-    }catch(error){
+    res.status(200).send({
+        posts
+    });
+    console.log(posts);
+    }
+    catch(error)
+    {
         console.log(error);
         res.status(404).json({
             status: 'fail',
