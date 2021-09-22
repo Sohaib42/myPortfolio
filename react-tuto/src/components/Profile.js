@@ -10,7 +10,7 @@ function Profile(){
                     </h1>
                     <Container lg="12" className="d-flex flex-wrap">
                     <Col lg="6">
-                        <Image src="/maphoto.jpg" alt="Nice picture of me" className="img-responsive hover-shadow" height="600" rounded responsive>
+                        <Image src="/maphoto.jpg" alt="Nice picture of me" className="img-responsive hover-shadow" height="400" rounded responsive>
                         </Image>
                     </Col>
                     <Col lg="4" className="align-self-center">

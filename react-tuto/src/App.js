@@ -1,12 +1,11 @@
 import React from 'react';
-import {Route} from 'react-router-dom';
 import ScrollButton from './components/ScrollButon';
 import HeadNav from './components/HeadNav';
 import Profile from './components/Profile';
 import Skills from './components/Skills';
 import Achievment from './components/Achievment';
 import Capabilities from './components/Capabilities';
-import Posts from './components/Posts';
+import Posts from './components/Posts/Posts';
 import './App.css';
 
 
@@ -15,7 +14,7 @@ function App() {
     <div className="App">
         <HeadNav/>
         <Profile/>
-        <Posts/>
+        <Posts />
         <Skills/>
         <Achievment/>
         <Capabilities/>
