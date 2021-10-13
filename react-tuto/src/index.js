@@ -1,14 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import './index.css';
 import App from './App';
+import Login from './components/Login';
 import reportWebVitals from './reportWebVitals';
+import AddPosts from './components/Posts/AddPosts';
 
 ReactDOM.render(
   <Router>
-    <App />
+    <Route exact path="/">
+      <App />
+    </Route>
+    <Route exact path="/login" component={Login}/>
+    <Route exact path="/submiting-post" component={AddPosts}/>
   </Router>,
   document.getElementById('root')
 );

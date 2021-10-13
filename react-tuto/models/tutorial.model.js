@@ -1,4 +1,4 @@
-const mongoose = require("mongoose")
+const mongoose = require("mongoose");
 
 const schema = mongoose.Schema({
 	title: String,
@@ -8,4 +8,4 @@ const schema = mongoose.Schema({
 	isDeleted: Boolean
 })
 
-module.exports = mongoose.model("Post", schema)
+module.exports = mongoose.model("Post", schema);

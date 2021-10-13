@@ -5,6 +5,10 @@ const jwt = require('jsonwebtoken');
 const bcrypt = require("bcrypt");
 const router = express.Router();
 
+router.get("/isUserAuth", verifyJWT, (req, res) => {
+    return res.json({isLoggedIn: true, username: req.user.username})
+})
+
 router.post("/register",async(req,res)=>{
         const user = req.body;
         const takenUsername = await User.findOne({username: user.username});
@@ -96,14 +100,14 @@ router.get("/posts",async(req,res)=>{
         });
     }
 })
-router.post("/posts",verifyJWT, async (req, res) => {
+router.post("/posts", async (req, res) => {
 	const post = new Post({
 		title: req.body.title,
 		content: req.body.content,
         postImage: req.body.postImage
 	})
-	await post.save()
-	res.send(post)
+	await post.save();
+	res.send(post);
 })
 
-module.exports = router
+module.exports = router;

@@ -1,6 +1,12 @@
 .App {
   text-align: center;
   font-family: monospace;
+  background-color: #282c34;
+}
+h1,h2,h3,h4,h5,h6,p{
+  font-family: 'Montserrat', sans-serif;
+
+  text-shadow: #e0e0e0 1px 1px 0;
 }
 
 .App-logo {
@@ -43,7 +49,7 @@
   display: flex;
 }
 .flexHeight{
-  height: fit-content !important;
+  height: 80vh;
   padding-top: 1em;
   padding-bottom: 1em;
   min-height: 80vh !important;
@@ -58,7 +64,7 @@
 .tabs{
   word-break: keep-all;
   list-style:none;
-  border-radius: 5%;
+  border-radius: 3%;
   border: 0.5em ,rgb(97, 218, 251) double;
   color:black !important;
   padding: 0.7em;
@@ -68,6 +74,7 @@
   background-color: linear-gradient(135deg, hsla(180,100%,94%,1) 0%,hsla(180,100%,94%,1) 7%,hsla(180,100%,94%,1) 12%,hsla(180,100%,100%,1) 12%,hsla(193,85%,95%,1) 30%,hsla(195,86%,89%,1) 54%,hsla(201,80%,86%,1) 75%,hsla(206,77%,83%,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1ffff', endColorstr='#b1d8f5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */  color: rgb(97, 218, 251);
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  margin: 0.6em;
 }
 .tabs:hover{
   color: rgb(97, 218, 251) !important;
@@ -101,7 +108,6 @@
 }
 
 .App>div>section>h1{
-  font-family: monospace;
   background-color: white;
   align-items: center;
   width: fit-content;

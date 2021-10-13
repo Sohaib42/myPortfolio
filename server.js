@@ -1,10 +1,6 @@
 const express = require("express");
 const cors = require("cors");
 const routes = require("./routes");
-
-
-
-
 const PORT = process.env.PORT || 8080;
 
 const db = require("./react-tuto/models/");
@@ -23,12 +19,11 @@ db.mongoose
     app.use(express.urlencoded({
       extended: true
     }));
+    app.use("/api", routes);// new
 
-    app.listen(PORT, () => {
+    app.listen(PORT, () => {  
       console.log(`Server is running on port ${PORT}.`);
     });
-    app.use("/api", routes) // new
-
   })
   .catch(err => {
     console.log("Cannot connect to the database!", err);

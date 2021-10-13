@@ -3,7 +3,7 @@ import {Container, Col} from "react-bootstrap";
 function Achievment(){
     return(
         <>
-        <Container id="experiences" fluid className="flexHeight">
+        <Container id="experiences"  className="flexHeight">
             <section  className="experiences">
                 <h1 className="sectionTitle">
                     Qu'ai-je déjà réalisé ?
