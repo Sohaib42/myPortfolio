@@ -1,4 +1,4 @@
-import { Container, Col,Row, Image } from "react-bootstrap";
+import { Container, Col, Image } from "react-bootstrap";
 
 function Profile() {
     return (
@@ -9,24 +9,18 @@ function Profile() {
                         Qui suis-je ?
                     </h1>
                     <p>
-                        
+
                     </p>
                     <Container lg="12" className="d-flex flex-wrap">
-                        <Col lg="2">
-                            <Image src="/maphoto.jpg" alt="Nice picture of me" className="img-responsive hover-shadow" height="400" rounded responsive>
+                    <Col lg="2">
+                        </Col>
+
+                        <Col lg="3" xs="5">
+                            <Image src="/maphoto.jpg" alt="Nice picture of me" className="img-responsive hover-shadow" rounded fluid>
                             </Image>    
                         </Col>
-                        <Col lg="6">
-                            <h2> What to do </h2>
-                            <ul>
-                                <li className="tabs">thing to do</li>
-                                <li className="tabs">thing to do</li>
-                                <li className="tabs">thing to do</li>
-                                <li className="tabs">thing to do</li>
-                                <li className="tabs">thing to do</li>
-                                <li className="tabs">thing to do</li>
-                                <li className="tabs">thing to do</li>
-                            </ul>
+                        <Col lg="2">
+
                         </Col>
                         <Col lg="4">
                             <p>

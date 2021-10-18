@@ -10,7 +10,7 @@ function HeadNav() {
             <Col lg="3" md="3">
               <NavLink href="#whois">
                 <li className="tabs">
-                  Qui suis-je?
+                  Qui suis-
                 </li>
               </NavLink>
             </Col>
@@ -24,14 +24,14 @@ function HeadNav() {
             <Col lg="3" md="3">
               <NavLink href="#experiences">
                 <li className="tabs">
-                  Mon expérience
+                  Expérience
                 </li>
               </NavLink>
             </Col>
             <Col lg="3" md="3">
               <NavLink href="#abilities">
                 <li className="tabs">
-                  De quoi je suis capable?
+                  Capacités
                 </li>
               </NavLink>
             </Col>
