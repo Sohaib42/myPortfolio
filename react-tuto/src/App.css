@@ -56,9 +56,11 @@
   list-style: none;
 }
 .tabs{
+  width: fit-content;
+  font-size: x-large;
   list-style:none;
   border-radius: 5%;
-  border: 0.5em ,rgb(97, 218, 251) double;
+  border: 0.9em ,rgb(97, 218, 251) double;
   color:black !important;
   padding: 0.7em;
   background-color: #e1ffff; /* Old browsers */
