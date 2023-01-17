@@ -31,6 +31,7 @@ db.mongoose
       extended: true
 
     }));
+    app.use("/api", routes);// new
 
     app.listen(PORT, () => {
       console.log(`Server is running on port ${PORT}.`);

@@ -1,6 +1,12 @@
 .App {
   text-align: center;
   font-family: monospace;
+  background-color: #282c34;
+}
+h1,h2,h3,h4,h5,h6,p{
+  font-family: 'Montserrat', sans-serif;
+
+  text-shadow: #e0e0e0 1px 1px 0;
 }
 
 .App-logo {
@@ -43,10 +49,8 @@
   display: flex;
 }
 .flexHeight{
-  height: fit-content !important;
   padding-top: 1em;
-  padding-bottom: 1em;
-  min-height: 80vh !important;
+  padding-bottom: 1em;    
 }
 
 .chooseList>a{
@@ -61,14 +65,22 @@
   list-style:none;
   border-radius: 5%;
   border: 0.9em ,rgb(97, 218, 251) double;
+  word-break: keep-all;
+  list-style:none;
+  border-radius: 3%;
+  border: 0.5em ,rgb(97, 218, 251) double;
   color:black !important;
   padding: 0.7em;
+
+
+  
   background-color: #e1ffff; /* Old browsers */
   background-color: -moz-linear-gradient(-45deg, hsla(180,100%,94%,1) 0%, hsla(180,100%,94%,1) 7%, hsla(180,100%,94%,1) 12%, hsla(180,100%,100%,1) 12%, hsla(193,85%,95%,1) 30%, hsla(195,86%,89%,1) 54%, hsla(201,80%,86%,1) 75%, hsla(206,77%,83%,1) 100%); /* FF3.6-15 */
   background-color: -webkit-linear-gradient(-45deg, hsla(180,100%,94%,1) 0%,hsla(180,100%,94%,1) 7%,hsla(180,100%,94%,1) 12%,hsla(180,100%,100%,1) 12%,hsla(193,85%,95%,1) 30%,hsla(195,86%,89%,1) 54%,hsla(201,80%,86%,1) 75%,hsla(206,77%,83%,1) 100%); /* Chrome10-25,Safari5.1-6 */
   background-color: linear-gradient(135deg, hsla(180,100%,94%,1) 0%,hsla(180,100%,94%,1) 7%,hsla(180,100%,94%,1) 12%,hsla(180,100%,100%,1) 12%,hsla(193,85%,95%,1) 30%,hsla(195,86%,89%,1) 54%,hsla(201,80%,86%,1) 75%,hsla(206,77%,83%,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1ffff', endColorstr='#b1d8f5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */  color: rgb(97, 218, 251);
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  margin: 0.6em;
 }
 .tabs:hover{
   color: rgb(97, 218, 251) !important;
@@ -77,9 +89,9 @@
 }
 .sectionTitle{
   margin: 1vh 0 1.5vh 0;
+  font-size: 2em;
 }
 .App>div{
-  height:100vh;
   padding-top: 1em;
   text-align: -webkit-center;
 }
@@ -102,7 +114,6 @@
 }
 
 .App>div>section>h1{
-  font-family: monospace;
   background-color: white;
   align-items: center;
   width: fit-content;
@@ -117,7 +128,7 @@
   font-size: 30px;
   background: transparent !important;
     bottom: 2vh;
-    color: rgb(97, 218, 251);
+    color: #282c34;
     width: 5vw;
     height: 5vh;
     max-inline-size: -moz-fit-content;
@@ -125,7 +136,6 @@
 }
 .backtoTop{
   animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) alternate forwards;
-
 }
 
 @-webkit-keyframes slide-top {
@@ -150,11 +160,63 @@
             scale: (1.1);
   }
 }
+.picOfMe{
+  min-height: 200px;
+  max-height: 400px;
+}
+.spanBack:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.postsElements{
+  width: -webkit-fill-available;
+  place-content: space-evenly;
+  max-height: min-content;
+}
+.singlePost{
+  background-color: white;
+  border-radius: 2%;
+  min-height: 20vh;
+}
+.singlePost:hover{
+  transform: scale(1.060);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+li.paginationActive{
+  background-color:  #282c34 !important;
+  color:white !important;
+}
+.postsLists{
+  justify-content: space-between;
+  list-style: none;
+}
+.postsLists>li{
+  border: #282c34 2px solid;
+  border-radius: 30%;
+  padding: 1.5vh;
+  color: black;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 40%) 0px 2px 4px, rgb(0 0 0 / 30%) 0px 7px 13px -3px, rgb(0 0 0 / 20%) 0px -3px 0px inset;
+}
+.postsLists>li:hover{
+  color: rgb(97, 218, 251) !important;
+  background-color: #282c34 !important;
+  border:2px rgb(97, 218, 251) solid !important;
+}
+.previous{
+  background-color: #282c34 !important;
+}
+.previousBttn{
+  text-decoration: none;
+  color: white ;
 
-.backtoTop:hover{
-  transform: scale(1.05);
-  color: rgb(34, 203, 250);
-
+}
+.next{
+  background-color: #282c34 !important;
+}
+.nextBttn{
+  text-decoration: none ;
+  color: white;
 }
 
 .profileTabs{
@@ -168,4 +230,9 @@
 .separator{
   border-radius: 50%;
   border: cornflowerblue 2px solid;
+}
+.post-image{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }

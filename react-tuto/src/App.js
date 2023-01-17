@@ -5,7 +5,7 @@ import Profile from './components/Profile';
 import Skills from './components/Skills';
 import Achievment from './components/Achievment';
 import Capabilities from './components/Capabilities';
-import Posts from './components/Posts';
+import Posts from './components/Posts/Posts';
 import './App.css';
 import Login from './components/Login/Login';
 

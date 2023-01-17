@@ -3,7 +3,8 @@ import {ReactComponent as TeraCampus} from "./tera-campus.svg";
 function Skills(){
     return(
         <>
-        <Container id="whatido" fluid className="flexHeight">
+
+        <Container id="whatido"  className="flexHeight">
             <section className="whatido">
                 <h1 className="sectionTitle">
                     Diplômes et formations
@@ -51,20 +52,7 @@ function Skills(){
                         </li>
                         </ul>
                     </Col>
-                <Col lg="12">
-                <br></br>
-                </Col>
-                    <Col lg="5">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Recusandae nisi architecto, aliquid aperiam saepe et fugiat.
-                            Amet nobis sit vel sed porro possimus distinctio nam, cumque nostrum atque, laborum est?
-                            Illum sit praesentium nostrum neque, fugit id aut nihil dolores laudantium est repellendus ipsam fuga expedita quod vel?
-                            Nihil corrupti amet quia error corporis veniam enim, odit eligendi repellat expedita laborum placeat.
-                            Quaerat, dolor. Consequatur exercitationem suscipit corrupti sit ullam molestiae voluptatibus omnis quidem provident perspiciatis ab, eius repellendus consectetur necessitatibus impedit, modi maxime corporis accusamus quae placeat officiis facere error. Dolorem, autem. Porro blanditiis tenetur sunt vitae voluptate laudantium.
-                        </p>
-                    </Col>
-                </Container>
+                </Container>    
                 
             </section>
         </Container>
