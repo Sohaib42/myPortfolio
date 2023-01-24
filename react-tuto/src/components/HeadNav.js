@@ -1,3 +1,4 @@
+import React from 'react';
 import logo from '../logo.svg';
 import { NavLink, Row, Col } from 'react-bootstrap';
 function HeadNav() {

@@ -16,7 +16,7 @@ function Login() {
 
         // Send a request to the server to check if the credentials are valid
         // Replace with actual request
-        const response = await fetch('/login', {
+        const response = await fetch('api/login', {
             method: 'POST',
             body: JSON.stringify({ username, password: hashedPassword }),
             headers: { 'Content-Type': 'application/json' },

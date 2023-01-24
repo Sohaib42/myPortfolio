@@ -1,3 +1,5 @@
+import React from "react";
+
 import { Container, Col, Image } from "react-bootstrap";
 
 function Profile() {

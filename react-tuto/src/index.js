@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import './index.css';
 import App from './App';
-import Login from './components/Login';
+import AddPosts from './components/Posts/AddPosts';
 import reportWebVitals from './reportWebVitals';
 import Login from './components/Login/Login';
 import Register from './components/Register/Register';

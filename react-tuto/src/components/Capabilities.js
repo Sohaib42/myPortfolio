@@ -1,9 +1,11 @@
+import React from "react";
+
 import { Container, Col } from "react-bootstrap";
 
 function Capabilities() {
     return (
         <>
-            <Container id="abilities"  className="flexHeight">
+            <Container id="abilities" className="flexHeight">
                 <section className="abilities">
                     <h1 className="sectionTitle">
                         Ce que je pratique !

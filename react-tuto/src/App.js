@@ -14,12 +14,12 @@ function App() {
   return (
     <div className="App">
       <HeadNav />
-      <Profile />
-      <Posts />
       <Skills />
       <Achievment />
       <Capabilities />
       <ScrollButton />
+      <Posts />
+
     </div>
   );
 }
